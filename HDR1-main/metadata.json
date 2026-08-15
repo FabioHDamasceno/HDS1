@@ -1,0 +1,6 @@
+{
+  "name": "OficinaAuto PT - Gerenciador de Oficina e Faturação",
+  "description": "Sistema completo de gestão de oficinas automóveis para o mercado português com histórico detalhado de manutenções, folhas de obra, validação NIF/Matrícula, faturação IVA e assistente técnico de IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

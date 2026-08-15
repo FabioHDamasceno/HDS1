@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Print Optimization Styles */
+  @media print {
+    /* Hide top nav, action buttons, modals backdrop outside printable element */
+    header,
+    nav,
+    button,
+    .print\:hidden,
+    .no-print,
+    .bg-slate-900\/70,
+    .backdrop-blur-xs {
+      display: none !important;
+    }
+
+    body, html {
+      background: #ffffff !important;
+      color: #000000 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: visible !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .fixed {
+      position: static !important;
+      background: #ffffff !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      overflow: visible !important;
+    }
+
+    .printable-document {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-shadow: none !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      color: #000000 !important;
+      background: #ffffff !important;
+      font-size: 11pt !important;
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+  }
+}
